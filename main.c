@@ -217,7 +217,7 @@ int main()
 		// // 第二行显示温度
 		static char row1[10];
 		memset(row0, '\0', sizeof(row1));
-		sprintf(row1, "Temp: %dC", row1);
+		sprintf(row1, "Temp: %dC", temp);
 		write_line_string(1, row1);
 
 		// // 第三行显示风速等级
