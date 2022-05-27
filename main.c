@@ -133,7 +133,7 @@ char *get_ram()
 	sysinfo(&g_sys_info);
 	g_total_ram = g_sys_info.totalram >> 20;
 	g_free_ram = g_sys_info.freeram >> 20;
-	sprintf(g_ram, "RAM:%ld/%ldMB", g_free_ram, g_total_ram);
+	sprintf(g_ram, "RAM: %ld/%ld MB", g_free_ram, g_total_ram);
 	return g_ram;
 }
 
