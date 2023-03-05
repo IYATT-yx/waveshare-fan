@@ -59,7 +59,11 @@ make install
 
 设置自启动:  
 以 root 权限编辑 /etc/rc.local，在 exit 0 前面的行添加
+（用户名替换成自己的）
 ```bash
-/home/pi/.waveshare-fan/waveshare-fan
+/home/[用户名]/.waveshare-fan/waveshare-fan
 ```
 ![](res/set-start.png)
+
+重启后执行 `ps aux | grep waveshare-fan` 可以看到出现 waveshare-fan 绝对路径的进程，即代表成功安装
+![](res/success.png)
