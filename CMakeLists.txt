@@ -14,4 +14,4 @@ add_executable(waveshare-fan ${LIB_SRC} ${SRC})
 find_package(ssd1306_i2c REQUIRED)
 target_link_libraries(waveshare-fan ${ssd1306_i2c_LIBRARIES} ${WIRINGPI_LIBRARIES})
 
-install(TARGETS waveshare-fan DESTINATION /home/pi/.waveshare-fan)
+install(TARGETS waveshare-fan DESTINATION $ENV{HOME}/.waveshare-fan)
